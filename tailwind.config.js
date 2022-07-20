@@ -3,9 +3,22 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./lib/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'fogWhite': '#eaeaea',
+        'fogDark': '#2d3047',
+        'fogGold': '#f3a712',
+        'fogBlue': '#0496ff'
+      },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        caveat: ["Caveat", "cursive"], 
+        syncopate: ["Syncopate", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
