@@ -15,10 +15,13 @@ module.exports = {
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
+        robotoMono: ["Roboto Mono", "mono"],
         caveat: ["Caveat", "cursive"], 
         syncopate: ["Syncopate", "sans-serif"]
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-bg-patterns'),
+  ],
 }
