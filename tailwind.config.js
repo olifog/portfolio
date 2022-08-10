@@ -11,7 +11,10 @@ module.exports = {
         'fogWhite': '#eaeaea',
         'fogDark': '#2d3047',
         'fogGold': '#f3a712',
-        'fogBlue': '#0496ff'
+        'fogBlue': '#0496ff',
+        "fogCode": "#ff8c00",
+        "fogInfrastructure": "#00008b",
+        "fogDesign": "#7f00ff"
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
