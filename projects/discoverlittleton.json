@@ -1,0 +1,12 @@
+{
+    "name": "discoverlittleton",
+    "title": "Discover Littleton",
+    "cardImg": "/discoverlittleton.jpg",
+    "url": "https://discoverlittleton.com/",
+    "featured": true,
+    "description": "A commissioned site for the town of Littleton, New Hampshire. I worked with a local web design company to show off the town's beautiful neighborhoods and things to do.",
+    "writeup": "A commissioned site for the town of Littleton, New Hampshire. I worked with a local web design company to show off the town's beautiful neighborhoods and things to do.",
+    "images": ["0.jpg", "1.jpg"],
+    "skills": ["Design"],
+    "tech": ["Figma", "Constant Contact", "Illustrator"]
+}
