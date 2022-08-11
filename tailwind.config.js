@@ -5,6 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./lib/**/*.{js,ts,jsx,tsx}"
   ],
+  safelist: [
+    'bg-fogCode',
+    'bg-fogDesign',
+    'bg-fogInfrastructure'
+  ],
   theme: {
     extend: {
       colors: {

@@ -5,11 +5,13 @@ import ProjectCard from '/lib/ProjectCard'
 export default function ProjectsPage({ projects }) {
   return (
     <Layout>
-      {
-        projects.map(project => (
-          <ProjectCard key={project.name} {...project} />
-        ))
-      }
+      <div className="flex flex-col space-y-4 max-w-2xl w-full mx-auto">
+        {
+          projects.map(project => (
+            <ProjectCard key={project.name} {...project} />
+          ))
+        }
+      </div>
     </Layout>
   )
 }

@@ -2,7 +2,10 @@ import Layout from '/lib/Layout'
 import getProjects from '/lib/getProjects'
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback } from 'react'
+import Link from 'next/link'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 
 const NextButton = ({ onClick, className }) => (
@@ -28,7 +31,7 @@ const PrevButton = ({ onClick, className }) => (
 )
 
 
-export default function ProjectPage({ name, title, github, images }) {
+export default function ProjectPage({ name, title, github, images, skills, url, writeup, tech }) {
   const [emblaRef, embla] = useEmblaCarousel({
     loop: true,
     skipSnaps: false,
@@ -60,7 +63,7 @@ export default function ProjectPage({ name, title, github, images }) {
           </div>
         )
       }
-      <div className="flex w-screen flex-col items-center">
+      <div className="flex w-screen flex-col items-center font-roboto">
         <div className="relative flex w-full max-w-xl items-center">
           <PrevButton className="w-16 h-16" onClick={scrollPrev} />
           <div className="w-full overflow-hidden" ref={emblaRef}>
@@ -76,11 +79,66 @@ export default function ProjectPage({ name, title, github, images }) {
           </div>
           <NextButton className="w-16 h-16" onClick={scrollNext} />
         </div>
-        <h1 className="font-syncopate text-5xl text-fogGold">
+        <h1 className="font-syncopate text-5xl text-fogGold pt-8">
           {title.toUpperCase()}
         </h1>
-        <div>
-          {github}
+        <div className="flex space-x-4 pt-2">
+          <div className="flex -space-x-1">
+            {
+              skills.map(skill => (
+                <div className={`skew-x-[24deg] bg-fog${skill} pb-[2px] px-3`} key={skill}>
+                  <div className="-skew-x-[24deg]">
+                    <span className="text-fogWhite text-sm font-bold">
+                      {skill}
+                    </span>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+          <div className="text-fogBlue space-x-3 flex">
+            {
+              github && (
+                <Link href={github} alt={github}>
+                  <a className="flex items-center">
+                    <span className="pr-[2px]">Github</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </Link>
+              )
+            }
+            {
+              url && (
+                <Link href={url} alt={url}>
+                  <a className="flex items-center">
+                    <span className="pr-[2px]">Live site</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </Link>
+              )
+            }
+          </div>
+        </div>
+        <div className="flex w-full max-w-2xl font-roboto pt-8 px-8 space-x-4">
+          <div className="">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {writeup}
+            </ReactMarkdown>
+          </div>
+          <div className="flex flex-col items-center bg-fogWhite/40 p-3 max-w-xs border-fogDark/30 border-2">
+            <h3 className="text-xl underline underline-offset-4 text-fogGold font-bold">Tech used</h3>
+            <div className="pt-2 flex flex-wrap w-[9rem] gap-1 justify-center">
+              {
+                tech.map(techSkill => (
+                  <div key={techSkill} className="rounded-full inline-block bg-fogDark text-fogWhite px-2 py-[1px]">{techSkill}</div>
+                ))
+              }
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
