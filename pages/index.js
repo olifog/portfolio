@@ -30,13 +30,13 @@ export default function Home({ projects }) {
           </div>
         </div>
       </div>
-      <div className="bg-fogDark w-full min-h-[340px] grid grid-cols-2">
-        <div className="w-full h-full p-8">
+      <div className="bg-fogDark w-full min-h-[340px] grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-none">
+        <div className="w-full h-full p-2 sm:p-8">
           <div className="w-full h-full relative">
-            <Image src="/trophy.jpg" alt="responsive" layout="fill" objectFit="contain" className="object-right" />
+            <Image src="/trophy.jpg" alt="responsive" layout="fill" objectFit="contain" className="md:object-right" />
           </div>
         </div>
-        <div className="w-full p-8 font-roboto text-fogGold pb-10">
+        <div className="w-full px-6 sm:p-8 font-roboto text-fogGold pb-10">
           <h1 className="text-2xl font-roboto pb-4">Awards and Recognition</h1>
           <ul className="text-sm list-disc text-fogWhite space-y-1">
             <li><b>Google Code In</b> International Finalist, <span className="text-gray-400">2019</span></li>
@@ -48,10 +48,10 @@ export default function Home({ projects }) {
         </div>
       </div>
       <div className="w-full flex flex-col items-center">
-        <h1 className="font-syncopate text-7xl text-fogBlue pt-8 pb-6">PROJECTS</h1>
+        <h1 className="font-syncopate text-4xl md:text-7xl text-fogBlue pt-8 pb-6">PROJECTS</h1>
         <div className="w-full flex flex-col items-center space-y-4 mb-8">
           {
-            projects.map(project => (
+            projects.sort((a, b) => b.weight - a.weight).map(project => (
               <ProjectCard key={project.name} {...project} />
             ))
           }
@@ -61,6 +61,24 @@ export default function Home({ projects }) {
             </a>
           </Link>
         </div>
+      </div>
+      <div id="contact" className="flex flex-col items-center bg-fogGold pb-6">
+        <h2 className="text-xl pt-4 pb-4 font-bold">Contact me!</h2>
+        <div className="flex space-x-1">
+          <Link href="">
+            <a><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" /></svg></a>
+          </Link>
+          <Link href="">
+            <a><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" /></svg></a>
+          </Link>
+          <Link href="">
+            <a><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" /></svg></a>
+          </Link>
+          <Link href="">
+            <a><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" /></svg></a>
+          </Link>
+        </div>
+        
       </div>
     </Layout>
   )

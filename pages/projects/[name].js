@@ -6,6 +6,7 @@ import { useState, useCallback } from 'react'
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { useRouter } from 'next/router'
 
 
 const NextButton = ({ onClick, className }) => (
@@ -38,6 +39,8 @@ export default function ProjectPage({ name, title, github, images, skills, url, 
     align: 'center'
   })
 
+  const router = useRouter()
+
   const [modal, setModal] = useState(null)
 
   const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
@@ -63,8 +66,14 @@ export default function ProjectPage({ name, title, github, images, skills, url, 
           </div>
         )
       }
-      <div className="flex w-screen flex-col items-center font-roboto">
+      <div className="relative flex w-screen flex-col items-center font-roboto">
         <div className="relative flex w-full max-w-xl items-center">
+          <button className="absolute top-0 left-4 flex items-center text-sm" onClick={(e) => { router.back() }}>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24" stroke="#2d3047" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+            </svg>
+            <span className="pb-[1px] text-fogDark">back</span>
+          </button>
           <PrevButton className="w-16 h-16" onClick={scrollPrev} />
           <div className="w-full overflow-hidden" ref={emblaRef}>
             <div className="flex items-center">
@@ -79,11 +88,11 @@ export default function ProjectPage({ name, title, github, images, skills, url, 
           </div>
           <NextButton className="w-16 h-16" onClick={scrollNext} />
         </div>
-        <h1 className="font-syncopate text-5xl text-fogGold pt-8">
+        <h1 className="font-syncopate text-center text-5xl text-fogGold pt-8">
           {title.toUpperCase()}
         </h1>
-        <div className="flex space-x-4 pt-2">
-          <div className="flex -space-x-1">
+        <div className="flex flex-col sm:flex-row space-x-4 pt-2">
+          <div className="flex -space-x-1 pb-2 sm:pb-0">
             {
               skills.map(skill => (
                 <div className={`skew-x-[24deg] bg-fog${skill} pb-[2px] px-3`} key={skill}>
@@ -96,7 +105,7 @@ export default function ProjectPage({ name, title, github, images, skills, url, 
               ))
             }
           </div>
-          <div className="text-fogBlue space-x-3 flex">
+          <div className="text-fogBlue space-x-3 flex sm:justify-start justify-center">
             {
               github && (
                 <Link href={github} alt={github}>
@@ -123,15 +132,15 @@ export default function ProjectPage({ name, title, github, images, skills, url, 
             }
           </div>
         </div>
-        <div className="flex w-full max-w-2xl font-roboto pt-8 px-8 space-x-4">
-          <div className="">
+        <div className="flex flex-col sm:flex-row w-full max-w-2xl font-roboto pt-8 px-8 space-x-4">
+          <div className="pb-4">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {writeup}
             </ReactMarkdown>
           </div>
-          <div className="flex flex-col items-center bg-fogWhite/40 p-3 max-w-xs border-fogDark/30 border-2">
+          <div className="flex flex-col items-center bg-fogWhite/40 p-3 max-w-xs border-fogDark/30 border-2 mb-4">
             <h3 className="text-xl underline underline-offset-4 text-fogGold font-bold">Tech used</h3>
-            <div className="pt-2 flex flex-wrap w-[9rem] gap-1 justify-center">
+            <div className="pt-2 flex flex-wrap w-[10rem] gap-1 justify-center">
               {
                 tech.map(techSkill => (
                   <div key={techSkill} className="rounded-full inline-block bg-fogDark text-fogWhite px-2 py-[1px]">{techSkill}</div>
