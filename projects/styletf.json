@@ -5,9 +5,10 @@
     "url": "https://style.tf",
     "github": "https://github.com/olifog/styletf",
     "featured": true,
-    "description": "A webapp that calculates and displays in-depth statistics from the game Team Fortress 2!\nStyle.tf uses the MongoDB Aggregation Pipeline extensively, and runs on a microservice architecture.\nThe project is currently analysing the weapon usage data of over 800,000 players.",
-    "writeup": "A webapp that calculates and displays in-depth statistics from the game Team Fortress 2!\nStyle.tf uses the MongoDB Aggregation Pipeline extensively, and runs on a microservice architecture.\nThe project is currently analysing the weapon usage data of over 800,000 players.",
+    "weight": 500,
+    "description": "A webapp that calculates and displays in-depth statistics from the game Team Fortress 2.\nStyle.tf uses the MongoDB Aggregation Pipeline extensively, and runs on a microservice architecture.\nThe project is currently analysing the weapon usage data of over 800,000 players.",
+    "writeup": "A webapp that calculates and displays in-depth statistics from the game Team Fortress 2.\nStyle.tf uses the MongoDB Aggregation Pipeline extensively, and runs on a microservice architecture.\nThe project is currently analysing the weapon usage data of over 800,000 players.",
     "images": ["0.jpg", "1.png"],
     "skills": ["Code", "Infrastructure", "Design"],
-    "tech": ["Next.js", "React", "MongoDB", "Typescript"]
+    "tech": ["Next.js", "React", "MongoDB", "Typescript", "TailwindCSS"]
 }

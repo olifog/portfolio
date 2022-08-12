@@ -5,9 +5,10 @@
     "url": "https://habits.olifog.com",
     "github": "https://github.com/olifog/habits",
     "featured": true,
-    "description": "A lightweight, simplistic habit tracker I built in preparation for my exams. Used it to learn Remix and the fundamentals of AWS infrastructure.",
-    "writeup": "A lightweight, simplistic habit tracker I built in preparation for my exams. Used it to learn Remix and the fundamentals of AWS infrastructure.",
+    "weight": 110,
+    "description": "A lightweight, minimalist habit tracker I built in preparation for my exams. Used it to learn Remix and the fundamentals of AWS infrastructure.",
+    "writeup": "A lightweight, minimalist habit tracker I built in preparation for my exams. Used it to learn Remix and the fundamentals of AWS infrastructure.",
     "images": ["0.jpg", "1.jpg", "2.jpg"],
     "skills": ["Code", "Infrastructure", "Design"],
-    "tech": ["Remix", "React", "DynamoDB", "Typescript", "Netlify"]
+    "tech": ["Remix", "React", "AWS", "Typescript"]
 }

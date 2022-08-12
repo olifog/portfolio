@@ -1,0 +1,13 @@
+{
+    "name": "minigolf",
+    "title": "Discord MiniGolf",
+    "cardImg": "/minigolf.jpg",
+    "github": "https://github.com/olifog/MiniGolf",
+    "featured": false,
+    "weight": 80,
+    "description": "A Discord MiniGolf bot, made for Discord Hack Week. Allowed you to play a game of MiniGolf against the bot and challenge your friends!",
+    "writeup": "A Discord MiniGolf bot, made for Discord Hack Week. Allowed you to play a game of MiniGolf against the bot and challenge your friends!\n\nI used this project as an opportunity to implement a 2d physics engine from scratch, and experiment with alternate user game experiences.",
+    "images": ["0.gif", "1.jpg"],
+    "skills": ["Code", "Design"],
+    "tech": ["Python", "discord.py", "Adobe Suite"]
+}

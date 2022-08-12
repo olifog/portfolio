@@ -1,0 +1,13 @@
+{
+    "name": "titanmmo",
+    "title": "Titan MMO",
+    "cardImg": "/titanmmo.jpg",
+    "github": "https://github.com/olifog/titan/tree/old/",
+    "featured": false,
+    "weight": 498,
+    "description": "An in-progress massively multiplayer online game. Currently rewriting in Rust, but eventually it will be a multi-platform text-based immersive experience set on the Saturn moon of Titan.",
+    "writeup": "An in-progress massively multiplayer online game. Currently rewriting in Rust, but eventually it will be a multi-platform text-based immersive experience set on the Saturn moon of Titan.",
+    "images": ["0.jpg", "1.jpg"],
+    "skills": ["Code", "Infrastructure", "Design"],
+    "tech": ["Next.js", "React", "Python", "MongoDB", "Websockets", "WAMP", "Typescript", "PixiJS", "Figma", "Adobe Suite", "discord.py", "TailwindCSS"]
+}

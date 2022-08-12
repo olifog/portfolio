@@ -1,0 +1,13 @@
+{
+    "name": "saxxyawards",
+    "title": "Saxxy Awards",
+    "cardImg": "/saxxyawards.jpg",
+    "github": "https://github.com/olifog/",
+    "featured": false,
+    "weight": 496,
+    "description": "The Community Saxxy Awards was an attempt to revive the Team Fortress 2 film-making festival, discontinued by the game's developer (Valve) a few years ago. Unfortunately, due to lack of response from Valve, I had to cancel the project out of copyright concerns - but the designs still look great!",
+    "writeup": "The Community Saxxy Awards was an attempt to revive the Team Fortress 2 film-making festival, that was discontinued by the game's developer (Valve) a few years ago. Unfortunately, due to lack of response from Valve, I had to cancel the project out of copyright concerns - but the designs still look great!\n\nThis was my first ever Next.js project, and it included full user profiles, submission uploading, voting, and Google/Steam API integrations for profile creation and sign-on.",
+    "images": ["0.jpg", "1.png"],
+    "skills": ["Code", "Design"],
+    "tech": ["Next.js", "React", "TailwindCSS", "Figma", "MongoDB", "Adobe Suite", "Source Film Maker"]
+}

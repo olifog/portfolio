@@ -4,6 +4,7 @@
     "cardImg": "/shareasmile.png",
     "github": "https://github.com/olifog/shareasmile",
     "featured": false,
+    "weight": 100,
     "description": "Share A Smile Today was a company I started with a friend over the Covid-19 pandemic. We saw the harm the lockdowns were doing to local small businesses, and created a service that enabled these local stores to sell vouchers for their products online. I created a voucher management system and business admin page from the ground-up.",
     "writeup": "Share A Smile Today was a company I started with a friend over the Covid-19 pandemic. We saw the harm the lockdowns were doing to local small businesses, and created a service that enabled these local stores to sell vouchers for their products online. I created a voucher management system and business admin page from the ground-up.",
     "images": ["0.jpg", "1.png"],
