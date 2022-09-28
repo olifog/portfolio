@@ -12,18 +12,19 @@ export default function Home({ projects }) {
           <span className="text-fogGold">OLI</span>
           VER FOGELIN
         </span>
-        <div className="grid grid-cols-2 w-full max-w-lg h-64">
-          <div className="w-full p-6">
-            <div className="bg-fogDark w-full h-full"></div>
+        <div className="grid grid-cols-2 w-full max-w-lg h-64 space-x-1">
+          <div className="w-full p-6 relative">
+            <Image src="/oliverfogelin.jpg" alt="Oliver Fogelin" layout='fill' objectFit="contain"></Image>
           </div>
-          <div className="w-full flex flex-col p-6 font-roboto">
-            <span className="pt-4 pb-8 font-bold">developer, writer, creative</span>
+          <div className="w-full flex flex-col p-4 font-roboto">
+            <h2 className="pt-2 font-bold text-lg pb-2">developer, writer, creative</h2>
+            <h2 className="pb-8">and founding cohort at the <a href="https://lis.ac.uk"><span className="italic">London Interdisciplinary School</span></a></h2>
             I&apos;m always looking for cool problems to solve.
             <br />
             <div className="text-sm pt-1">
               (and&nbsp;
               <a href="https://letterboxd.com/olifog/" className="text-fogBlue">
-                watching a film every day
+                watching way too many films
               </a>
               .)
             </div>
