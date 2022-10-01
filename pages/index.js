@@ -31,7 +31,7 @@ export default function Home({ projects }) {
           </div>
         </div>
       </div>
-      <div className="bg-fogDark w-full min-h-[340px] grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-none">
+      <div className="bg-fogDark w-full min-h-[340px] grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-none border-x-4 border-fogGold">
         <div className="w-full h-full p-2 sm:p-8">
           <div className="w-full h-full relative">
             <Image src="/trophy.jpg" alt="responsive" layout="fill" objectFit="contain" className="md:object-right" />
