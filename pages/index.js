@@ -40,7 +40,7 @@ export default function Home({ projects }) {
         <div className="w-full px-6 sm:p-8 font-roboto text-fogGold pb-10">
           <h1 className="text-2xl font-roboto pb-4">Achievements</h1>
           <ul className="text-sm list-disc text-fogWhite space-y-1">
-            <li><b>A Levels - A*A*A*A*A</b> in Maths, Further Maths, English Literature, Biology, and AS Computer Science <span className="text-gray-400">2022</span></li>
+            <li><b>A Levels, A*A*A*A*A</b> in Maths, Further Maths, English Literature, Biology, and AS Computer Science <span className="text-gray-400">2022</span></li>
             <li><b>Lockheed Martin CodeQuest</b> 1st place nationally, <span className="text-gray-400">2021, 2020, 2019, 2018</span></li>
             <li><b>Google Code In</b> International Finalist, <span className="text-gray-400">2019</span></li>
             <li><b>Oxford University Computing Challenge</b> national top 20 finalist, <span className="text-gray-400">2022, 2021</span></li>
