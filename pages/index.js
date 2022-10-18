@@ -19,11 +19,11 @@ export default function Home({ projects }) {
             <span className="text-fogGold">OLI</span>
             VER FOGELIN
           </span>
-          <div className="grid md:grid-cols-2 w-full max-w-2xl space-x-1">
-            <div className="w-full max-w-[16rem] p-6 relative h-48 md:h-full">
+          <div className="flex flex-col items-center md:grid md:grid-cols-2 w-full max-w-2xl space-x-1">
+            <div className="w-full mx-auto max-w-[16rem] p-6 relative h-48 md:h-full">
               <Image src="/oliverfogelin.jpg" alt="Oliver Fogelin" layout='fill' objectFit="contain"></Image>
             </div>
-            <div className="w-full flex flex-col p-4 font-roboto">
+            <div className="w-[24rem] flex flex-col p-4 font-roboto">
               <h2 className="pt-2 font-bold text-lg pb-2">developer, writer, creative</h2>
               I&apos;m always looking for cool problems to solve.
               <br />
