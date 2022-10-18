@@ -19,22 +19,29 @@ export default function Home({ projects }) {
             <span className="text-fogGold">OLI</span>
             VER FOGELIN
           </span>
-          <div className="grid grid-cols-2 w-full max-w-lg h-64 space-x-1">
-            <div className="w-full p-6 relative">
+          <div className="grid md:grid-cols-2 w-full max-w-2xl space-x-1">
+            <div className="w-full max-w-[16rem] p-6 relative h-48 md:h-full">
               <Image src="/oliverfogelin.jpg" alt="Oliver Fogelin" layout='fill' objectFit="contain"></Image>
             </div>
             <div className="w-full flex flex-col p-4 font-roboto">
               <h2 className="pt-2 font-bold text-lg pb-2">developer, writer, creative</h2>
-              <h2 className="pb-8">and founding cohort at the <a target="_blank" rel="noreferrer noopener" href="https://lis.ac.uk"><span className="italic text-fogGold">London Interdisciplinary School</span></a></h2>
               I&apos;m always looking for cool problems to solve.
               <br />
-              <div className="text-sm pt-1">
+              <div className="text-sm">
                 (and&nbsp;
                 <a target="_blank" rel="noreferrer noopener" href="https://letterboxd.com/olifog/" className="text-fogBlue">
                   watching way too many films
                 </a>
                 .)
               </div>
+              <div className="pt-2">Currently working on:</div>
+              <ul className="text-sm pl-4 list-disc">
+                <li>Building a Rust circuit simulator</li>
+                <li>Simulating an 8-bit computer using only NOT and OR gates</li>
+                <li>Writing a collection of essays on AI ethics and the Singularity</li>
+                <li>Self-studying the MIT Computer Science and Neuroscience degrees</li>
+                <li>Creating generative AI performance art</li>
+              </ul>
             </div>
           </div>
         </div>
