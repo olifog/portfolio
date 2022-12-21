@@ -21,7 +21,7 @@ export default function Home({ projects }) {
           </span>
           <div className="flex flex-col items-center md:grid md:grid-cols-2 w-full max-w-2xl space-x-1">
             <div className="w-full mx-auto max-w-[16rem] p-6 relative h-48 md:h-full">
-              <Image src="/oliverfogelin.jpg" alt="Oliver Fogelin" layout='fill' objectFit="contain"></Image>
+              <Image src="/oliverfogelin.jpeg" alt="Oliver Fogelin" layout='fill' objectFit="contain"></Image>
             </div>
             <div className="w-[24rem] flex flex-col p-4 font-roboto">
               <h2 className="pt-2 font-bold text-lg pb-2">developer, writer, creative</h2>
