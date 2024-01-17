@@ -36,10 +36,10 @@ export default function Home({ projects }) {
               </div>
               <div className="pt-2">Currently working on:</div>
               <ul className="text-sm pl-4 list-disc">
+                <li>Studying my second term of CS at the Uni of Cambridge</li>
                 <li>Building a Rust circuit simulator</li>
                 <li>Simulating an 8-bit computer using only NOT and OR gates</li>
                 <li>Writing a collection of essays on AI ethics and the Singularity</li>
-                <li>Self-studying the MIT Computer Science and Neuroscience degrees</li>
                 <li>Creating generative AI performance art</li>
               </ul>
             </div>
