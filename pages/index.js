@@ -21,10 +21,10 @@ export default function Home({ projects }) {
           </span>
           <div className="flex flex-col items-center md:grid md:grid-cols-2 w-full max-w-2xl space-x-1">
             <div className="w-full mx-auto max-w-[16rem] p-6 relative h-48 md:h-full">
-              <Image src="/oliverfogelin.jpeg" alt="Oliver Fogelin" layout='fill' objectFit="contain"></Image>
+              <Image src="/oliverfogelin.jpg" alt="Oliver Fogelin" layout='fill' objectFit="contain"></Image>
             </div>
             <div className="w-[24rem] flex flex-col p-4 font-roboto">
-              <h2 className="pt-2 font-bold text-lg pb-2">developer, writer, creative</h2>
+              <h2 className="pt-2 font-bold text-lg pb-2">software engineer and creative</h2>
               I&apos;m always looking for cool problems to solve.
               <br />
               <div className="text-sm">
@@ -36,11 +36,10 @@ export default function Home({ projects }) {
               </div>
               <div className="pt-2">Currently working on:</div>
               <ul className="text-sm pl-4 list-disc">
-                <li>Studying my second term of CS at the Uni of Cambridge</li>
-                <li>Building a Rust circuit simulator</li>
-                <li>Simulating an 8-bit computer using only NOT and OR gates</li>
-                <li>Writing a collection of essays on AI ethics and the Singularity</li>
-                <li>Creating generative AI performance art</li>
+                <li>Interning at a YC company in SF</li>
+                <li>Prepping for the 2nd year of Cambridge Computer Science</li>
+                <li>Hacking on a new vector-first graph database</li>
+                <li>Building <a target="_blank" rel="noreferrer noopener" href="https://www.tripos.pro" className="text-fogBlue">TriposPro</a>, a question tracker for Cambridge degrees</li>
               </ul>
             </div>
           </div>
